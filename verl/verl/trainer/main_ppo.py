@@ -333,7 +333,8 @@ class TaskRunner:
         trainer.init_workers()
 
         # Start the training process.
-        trainer.fit()
+        # trainer.fit()
+        trainer.fit_without_rollout()
 
 
 def create_rl_dataset(data_paths, data_config, tokenizer, processor, is_train=True, max_samples: int = -1):
